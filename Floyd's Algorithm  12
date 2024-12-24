@@ -23,7 +23,7 @@ def floyds_algorithm(n, edges):
     for k in range(n):
         for i in range(n):
             for j in range(n):
-                if distance[i][j] > distance[i][k] + distance[k][j]:
+                if distance[i][j] > distance[i][k] + distance[k][j][i];
                     distance[i][j] = distance[i][k] + distance[k][j]
     
     return distance
